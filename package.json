@@ -1,0 +1,17 @@
+{
+  "name": "bernhack-2025",
+  "version": "1.0.0",
+  "description": "BernHack 2025 - Nepal's Premier Hackathon",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "lucide": "^0.263.1"
+  }
+}

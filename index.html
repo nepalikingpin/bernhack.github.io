@@ -1,566 +1,831 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title> BernHack - 2020</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content ="width=device-width, initial-scale=1.0, user-scalable=no">
-	<meta name="description" content="BernHack- First edition of annual hackathon organized by Kathmandu BernHardt College">
-	<meta name="keywords" content="Hackathon,BernHack,bernhack,bernhardt,mlh,Nepal,prize,event,technology,bernhardt,college,hack,workshop,mentors,judges,sponsors,microsoft,github,App,Team,2020">
-	<meta name="author" content="Manish Bhattarai <manishbhattarai@studentpartner.com>">
-
-	<link rel="shortcut icon" href="./images/new_logo.png" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
-	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-	<script>
-		//
-	</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BernHack 2025 - Nepal's Premier Hackathon</title>
+    <meta name="description" content="Join BernHack 2025 - Nepal's most innovative hackathon. 48 hours of coding, innovation, and problem-solving at Kathmandu BernHardt College.">
+    <meta name="keywords" content="hackathon, nepal, coding, innovation, technology, programming, bernhack, 2025">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/components.css">
+    <link rel="stylesheet" href="./src/styles/animations.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/new_logo.png">
 </head>
-<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:175px;top:0;width:10%;z-index:10000" href="https://hackp.ac/apac" target="_blank">
-	<img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-apac-yellow.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%">
-  </a>
 <body>
-	<div class="header">
-		<div class="blurred"></div>
-		<ul class="nav">
-			<li class="head">
-				<span class="closeHeader">
-					<img src="./images/cross.svg">
-				</span>
-			</li>
-			<li class="navItem active"> Home </li>
-			<li class="navItem"> Introduction </li>
-			<!-- <li class="navItem"> Gallery </li> -->
-			<li class="navItem"> Tracks </li>
-			<li class="navItem"> Schedule </li>
-			<li class="navItem"> Sponsors </li>
-			<li class="navItem"> Prizes </li>
-			<li class="navItem"> FAQs </li>
-		</ul>
-	</div>
-	<div class="fullOverlay"></div>
-	<div class="content">
-		<div class="hamburger">
-			<img src="./images/menu.svg">
-		</div>
-		<div class="appteam-logo">
-			<!-- <img src="./images/logo.png" title="BernHack"> -->
-		</div>
-		<div class="frame frame1">
-			<img  src="./images/back-1.svg" class="img-back">
-			<div class="frame1-right">
-				<img  src="./images/frame1-icon.svg">
-			</div>
-			<div class="frame1-left">
-				<div class="content">
-					<div class="sponsor-name"><a href="https://kbc.edu.np" target="_blank"> <img src="./images/kbclogo.png" class="github-home-icon"></a> Presents </div>
-					<div class="name"> BernHack</div><br>
-					<div class="date"> 24 - 25 January 2020 </div><br>
-					<div class="date"> Kathmandu BernHardt College </div>
-					<div class="devfolio">
-						<button id="devfolio-apply-now"> <a style="display: block; width: 3.5in;" class="applybutton" href="#" > Registration Closed</a></button>
-					</div>
-				</div>
-			</div>
-			<div class="app-team-icon">
-				<img src="./images/appteam.png">
-			</div>
-		</div>		
-		<div class="frame frame2">
-			<img class="img-back-left" src="./images/back-2.svg">
-			<img class="img-back" src="./images/back-3.svg">
-			<div class="frame2-left">
-				<img src="./images/frame1-icon.svg">
-			</div>
-			<div class="frame2-right">
-				<div class="name"> What is BernHack ? </div>
-				<div class="content">
-					<p>
-						BernHack is BernHardt College’s first-ever programming event organized by students, for
-						students all over Nepal. We are MLH’s (Major League Hacking) first ever member hackathon
-						in Nepal. The event is aimed to bring together all young hacking enthusiasts under one roof. 
-					</p>
-					<p>
-						Reputed mentors and trainers will oversee the participants. Our event will house a huge
-						network of professionals, business delegates along with active youths.
-					</p>
-					<p>
-						BernHack will last up to two days which will include:
-						<ul>
-							<li>Address from professionals from different IT field</li>
-							<li>Mentorship from the professionals of the field</li>
-							<li>Speakers giving information on topics of related field</li>
-							<li>Time to network, connect with people and find inspiration to continue with hacking</li>
-							
-						</ul>
-					</p>
-					<p>
-						See our Code of Conduct <a id="CoC-link" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="__blank">Here</a>.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="frame frame3">
-			<img src="./images/back-4.svg" class="img-back">
-			<img src="./images/back-5.svg" class="img-back-bottom">
-			<div class="frame5-content">
-				<div class="name"> Tracks </div>
-				<div class="track-icons">
-					<div class="a-track">
-						<div class="colorless">
-							<img src="./images/Tracks/blockchain.svg">
-						</div>
-						<div class="colorful">
-							<img src="./images/Tracks/blockchain-color.svg">
-						</div>
-						<div class="track-name">
-							<a class="tracklink" href="./blockchain.html">Blockchain</a>
-						</div>
-					</div>
-					<div class="a-track">
-						<div class="colorless">
-							<img src="./images/Tracks/iot.svg">
-						</div>
-						<div class="colorful">
-							<img src="./images/Tracks/iot-color.svg">
-						</div>
-						<div class="track-name">
-							<a class="tracklink" href="./iot.html">IoT</a>
-						</div>
-					</div>
-					<div class="a-track">
-						<div class="colorless">
-							<img src="./images/Tracks/ai.svg">
-						</div>
-						<div class="colorful">
-							<img src="./images/Tracks/ai-color.svg">
-						</div>
-						
-						<div class="track-name">
-						<a class="tracklink" href="./ai.html">AI</a>	
-						</div>
-					</div>
-					<div class="a-track">
-						<div class="colorless">
-							<img src="./images/Tracks/webapp.svg">
-						</div>
-						<div class="colorful">
-							<img src="./images/Tracks/webapp-color.svg">
-						</div>
-						<div class="track-name">
-							<a class="tracklink" href="./web.html">Web&nbsp;/&nbsp;App</a>
-						</div>
-					</div>
-					<div class="a-track">
-						<div class="colorless">
-							<img src="./images/Tracks/vr.svg">
-						</div>
-						<div class="colorful">
-							<img src="./images/Tracks/vr-color.svg">
-						</div>
-						<div class="track-name">
-							<a class="tracklink" href="./ar.html">AR&nbsp;/&nbsp;VR</a>
-						</div>
-					</div>
-					<div class="a-track">
-						<div class="colorless">
-							<img src="./images/Tracks/general.svg">
-						</div>
-						<div class="colorful">
-							<img src="./images/Tracks/general-color.svg">
-						</div>
-						<div class="track-name">
-							<a class="tracklink" href="./general.html">General</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="frame frame4">
-			<img class="img-back-left" src="./images/back-3.svg">
-			<img class="img-back" src="./images/back-2.svg">
-			<div class="frame4-left">
-				<img src="./images/frame2-right.svg">
-			</div>
-			<div class="frame4-right">
-				<div class="name"> Timeline </div>
-				 <div class="timeline">
-					<div class="schedule schedule-1">
-						<div class="dot"></div>
-						<div class="schedule-content">
-							<div class="schedule-date"> 24th January 2020 </div>
-							<div class="schedule-title"> Opening Ceremony and First Day </div>
-							<div class="schedule-text"> <span class="schedule-time"> 9:00 AM - </span> Inauguration </div>
-							<div class="schedule-text"> <span class="schedule-time"> 9:30 AM - 10:30 AM - </span> Registration/Breakfast </div>
-							<div class="schedule-text"> <span class="schedule-time"> 10:30 AM - 10:40 AM - </span> MLH Opening Keynote </div>
-							<div class="schedule-text"> <span class="schedule-time"> 10:40 AM - 11:30 AM - </span> Keynotes </div>
-							<div class="schedule-text"> <span class="schedule-time"> 11:30 AM - 12:00 PM - </span> Closing of Opening Ceremony </div>
-							<div class="schedule-text"> <span class="schedule-time"> 12:00 PM - 1:00 PM - </span> Lunch </div>
-							<div class="schedule-text"> <span class="schedule-time"> 1:00 PM - </span> Hacking Begins </div>
-							<div class="schedule-text"> <span class="schedule-time"> 1:00 PM - 4:00 PM - </span> Hacking Continues </div>
-							<div class="schedule-text"> <span class="schedule-time"> 4:00 PM - 5:00 PM - </span> Khaja/Snacks </div>
-							<div class="schedule-text"> <span class="schedule-time"> 5:00 PM - 7:00 PM - </span> Hacking Continues </div>
-							<div class="schedule-text"> <span class="schedule-time"> 7:00 PM - 8:00 PM - </span> Dinner </div>
-							<div class="schedule-text"> <span class="schedule-time"> 8:00 PM - 12:00 AM - </span> Hacking Continues </div>
-							<div class="schedule-text"> <span class="schedule-time"> 12:00 AM - </span> Games/Snacks </div>
-						</div>
-						<div class="schedule-content">
-							<div class="schedule-title"> Parallel Workshop Sessions </div>
-							<div class="schedule-text"> <span class="schedule-time"> 1:45 PM - 3:00 PM - </span> Colloboration using Slack, Trello and GitHub:Binod Jung Bogati </div>
-							<div class="schedule-text"> <span class="schedule-time"> 3:00 PM - 3:30 PM - </span> Art of Pitching:Bibek Chaudhary</div>
-							<div class="schedule-text"> <span class="schedule-time"> 3:30 PM - 5:00 PM - </span> AWS Workshop by Genese Cloud Academy </div>
-							<div class="schedule-text"> <span class="schedule-time"> 5:00 PM - 5:30 PM - </span> Rest API:Aashan Ghimire </div>
-							<div class="schedule-text"> <span class="schedule-time"> 6:00 PM - 6:30 PM - </span> Azure for Apps:Pradeep Kandel </div>
-						</div>
-					</div>
-					<div class="schedule schedule-2">
-						<div class="dot"></div>
-						<div class="schedule-content">
-							<div class="schedule-date"> 25th January 2020 </div>
-							<div class="schedule-title"> Expo/Winner Announcement/Closing </div>
-							<div class="schedule-text"> <span class="schedule-time"> 7:00 AM - 8:00 AM </span> Breakfast </div>
-							<div class="schedule-text"> <span class="schedule-time"> 8:00 AM - 10:00 AM - </span> Hacking Continues </div>
-							<div class="schedule-text"> <span class="schedule-time"> 10:00 AM - 11:00 AM - </span> Lunch </div>
-							<div class="schedule-text"> <span class="schedule-time"> 11:00 AM - 12:00 PM - </span> Hacking Continues </div>
-							<div class="schedule-text"> <span class="schedule-time"> 12:0 PM - </span> Hacking Ends </div>
-							<div class="schedule-text"> <span class="schedule-time"> 12:00 PM - 1:00 PM - </span> Khaja/Snacks </div>
-							<div class="schedule-text"> <span class="schedule-time"> 1:00 PM - 3:00 PM - </span> Expo/Jury </div>
-							<div class="schedule-text"> <span class="schedule-time"> 3:00 PM - 3:30 PM - </span> Top 5 Annoucement </div>
-							<div class="schedule-text"> <span class="schedule-time"> 3:30 PM - 4:00 PM - </span> Top 5 Teams Presentation </div>
-							<div class="schedule-text"> <span class="schedule-time"> 4:15 PM - </span> Winner Annoucement </div>
-							<div class="schedule-text"> <span class="schedule-time"> 4:15 - </span> Prize Distribution/Token of Love/Photo Session/Closing Remarks </div>
-						</div>
-					</div>
-				</div> 
-			</div>
-		</div>
-		<div class="frame frame5">
-			<img src="./images/back-4.svg" class="img-back">
-			<img src="./images/back-5.svg" class="img-back-bottom">
-			<div class="frame5-content">
-				<div class="name"> Sponsors </div>
-				<div class="sponsor-icons">
-					<div class="sponsor-icon main-sponsor">
-						<a href="https://github.com" target="__blank"><img src="./images/github.png"></a>
-					</div>
-					<div class="sponsor-icon main-sponsor">
-						<a href="https://studentpartners.microsoft.com/en-us" target="__blank"><img  src="./images/msplogo.png"></a>
-					</div>
-					<div class="sponsor-icon">
-						<a href="https://admana.net" target="__blank"><img src="./images/admana.png"></a>
-					</div>
-					<div class="sponsor-icon">
-						<a href="https://vianet.com.np" target="__blank"><img src="./images/vianet.png"></a>
-					</div>
-					<div class="sponsor-icon">
-						<a href="https://slack.com" target="__blank"><img src="./images/slack.png"></a>
-					</div>
-					<div class="sponsor-icon">
-						<a href="https://genesecloud.academy" target="__blank"><img src="./images/genese-cloud-academy.svg"></a>
-					</div>
-					<div class="sponsor-icon">
-						<a href="https://iitnepal.edu.np" target="__blank"><img src="./images/iitnepal.png"></a>
-					</div>
-					<div class="sponsor-icon">
-						<a href="https://centurybank.com.np" target="__blank"><img src="./images/century_bank_logo.png"></a>
-					</div>
-					<div class="sponsor-icon">
-						<a href="#" target="__blank"><img src="./images/saraswoti.png"></a>
-					</div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="./images/new_logo.png" alt="BernHack" class="nav-logo">
+                <span class="nav-title">BernHack<span class="year">2025</span></span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#tracks" class="nav-link">Tracks</a>
+                <a href="#schedule" class="nav-link">Schedule</a>
+                <a href="#prizes" class="nav-link">Prizes</a>
+                <a href="#sponsors" class="nav-link">Sponsors</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn btn-primary register-btn">Register Now</button>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-				</div>
-				<div class="frame5-text">
-					Interested in making 'BernHack' a huge success.<br>
-					Come join us by sponsoring us. Check the &nbsp;<a href="/pdf/bernhackproposal.pdf" target="__blank">Sponsorship Brochure</a>&nbsp; for more details.
-				</div>
-			</div>
-		</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="grid-pattern"></div>
+            <div class="floating-elements">
+                <div class="floating-element" style="--delay: 0s; --duration: 8s;"></div>
+                <div class="floating-element" style="--delay: 2s; --duration: 12s;"></div>
+                <div class="floating-element" style="--delay: 4s; --duration: 10s;"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Nepal's Premier Hackathon</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Build the</span>
+                    <span class="title-line gradient-text">Future</span>
+                    <span class="title-line">in 48 Hours</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Join 500+ innovators, developers, and problem-solvers at BernHack 2025. 
+                    Transform ideas into reality, compete for amazing prizes, and shape Nepal's tech future.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">48</div>
+                        <div class="stat-label">Hours</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Participants</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">₹1M+</div>
+                        <div class="stat-label">Prizes</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Tracks</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large register-btn">
+                        <span>Register Now</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary btn-large" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                        <span>Learn More</span>
+                        <i data-lucide="play"></i>
+                    </button>
+                </div>
+                
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i data-lucide="calendar"></i>
+                        <span>January 24-25, 2025</span>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="map-pin"></i>
+                        <span>Kathmandu BernHardt College</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-		<div class="frame frame5">
-			<img src="./images/back-4.svg" class="img-back">
-			<img src="./images/back-5.svg" class="img-back-bottom">
-			<div class="frame5-content">
-				<div class="name"><u> Event Partner </u></div>
-				<!-- <div class="sponsor-icons"> -->
-					<div class="sponsor-icon main-sponsor">
-						<a href="https://mlh.io" target="__blank"><img style="width:4in;" src="./images/mlh.png"></a>
-					</div>
-				<!-- </div> -->
-			</div>
-		</div>
-		<div class="frame frame5">
-			<img src="./images/back-4.svg" class="img-back">
-			<img src="./images/back-5.svg" class="img-back-bottom">
-			<div class="frame5-content">
-				<div class="name"><u> Media Partners </u></div>
-				<div class="sponsor-icons"> 
-					<div class="sponsor-icon ">
-						<a href="https://edusanjal.com" target="__blank"><img src="./images/edusanjal.png"></a>
-					</div>
-					<div class="sponsor-icon ">
-						<a href="https://sallerikhabar.com" target="__blank"><img src="./images/sallerikhabar.png"></a>
-					</div>
-					<div class="sponsor-icon ">
-						<a href="https://ictframe.com" target="__blank"><img src="./images/ictframe.png"></a>
-					</div>
-					<div class="sponsor-icon ">
-						<a href="https://techpatro.com" target="__blank"><img src="./images/techpatro.png"></a>
-					</div>
-					<div class="sponsor-icon ">
-						<a href="https://rajmarga.com" target="__blank"><img  src="./images/rajmarga.png"></a>
-					</div>
-					<div class="sponsor-icon ">
-						<a href="https://eventnepal.com" target="__blank"><img  src="./images/eventnepal.png"></a>
-					</div>
-					<div class="sponsor-icon ">
-						<a href="https://techsathi.com" target="__blank"><img  src="./images/techsathi.png"></a>
-					</div>
-				 </div>
-			</div>
-		</div>
-		<div class="frame frame5">
-			<img src="./images/back-4.svg" class="img-back">
-			<img src="./images/back-5.svg" class="img-back-bottom">
-			<div class="frame5-content">
-				<div class="name"><u> Community Partners </u></div>
-				 <div class="sponsor-icons">
-					 <div class="sponsor-icon">
-						<a href="https://askbuddie.com" target="__blank"><img src="./images/askbuddie.png"></a>
-					</div>
-					<div class="sponsor-icon">
-						<a href="https://csitan.org.np" target="__blank"><img src="./images/csitan.png"></a>
-					</div>
-					<div class="sponsor-icon">
-						<a href="https://udhyamiseedcamp.com.np" target="__blank"><img src="./images/udhyami.png"></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="frame frame6">
-			<img src="./images/back-6.svg" class="img-back-left">
-			<img src="./images/back-7.svg" class="img-back-right">
-			<div class="name"> Prizes </div>
-			<div class="prizes">
-				<div class="prizes-cont">
-					<div class="prize">
-						<div class="prize-img">
-							<img src="./images/gaming.jpg">
-						</div>
-						<div class="prize-text">
-							First Prize - Gaming Sets Worth Rs 30000 & Prizes from MLH
-						</div>
-					</div>
-					<div class="prize">
-							<div class="prize-img">
-								<img src="./images/gaming.jpg">
-							</div>
-							<div class="prize-text">
-								Second Prize - Gaming Sets Worth Rs 20000  & Prizes from MLH
-							</div>
-					</div>
-							<div class="prize">
-								<div class="prize-img">
-									<img src="./images/gaming.jpg">
-								</div>
-								<div class="prize-text">
-									Third Prize - Gaming Sets Worth Rs 10000 & Prizes from MLH
-								</div>
-							</div>
-								<div class="prize">
-									<div class="prize-img">
-										<img src="./images/gaming.jpg">
-									</div>
-									<div class="prize-text">
-										Most Innovative - Gaming Sets Worth Rs 5000
-									</div>
-								</div>
-								<div class="prize">
-									<div class="prize-img">
-										<img src="./images/gaming.jpg">
-									</div>
-									<div class="prize-text">
-										Best Prototype - Gaming Sets Worth Rs 5000
-									</div>
-								</div>
-								<div class="prize">
-									<div class="prize-img">
-										<img src="./images/iitnepal.png">
-									</div>
-									<div class="prize-text">
-										First Prize - 100% Scholarship on any Course for whole team
-									</div>
-								</div>
-								<div class="prize">
-									<div class="prize-img">
-										<img src="./images/iitnepal.png">
-									</div>
-									<div class="prize-text">
-										Second Prize - 75% Scholarship on any Course for whole team
-									</div>
-								</div>
-								<div class="prize">
-									<div class="prize-img">
-										<img src="./images/iitnepal.png">
-									</div>
-									<div class="prize-text">
-										 Prize - 50% Scholarship on any Course for whole team
-									</div>
-								</div>
-								<div class="prize">
-									<div class="prize-img">
-										<img src="./images/genese-cloud-academy.svg">
-									</div>
-									<div class="prize-text">
-										First Prize - $700 AWS Credits
-									</div>
-								</div>
-								<div class="prize">
-									<div class="prize-img">
-										<img src="./images/genese-cloud-academy.svg">
-									</div>
-									<div class="prize-text">
-										Second Prize - $650 AWS Credits
-									</div>
-								</div>
-								<div class="prize">
-									<div class="prize-img">
-										<img src="./images/genese-cloud-academy.svg">
-									</div>
-									<div class="prize-text">
-										Third  Prize - $500 AWS Credits 
-									</div>
-								</div>
-					<div class="prize">
-						<div class="prize-img">
-							<img src="./images/github.svg">
-						</div>
-						<div class="prize-text">
-							First Prize - GitHub BackPacks
-						</div>
-					</div>
-					<div class="prize">
-						<div class="prize-img">
-							<img src="./images/admana.png">
-						</div>
-						<div class="prize-text">
-							Best AdTech App on Given Topic - Rs 5000 Cash
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="frame frame7">
-			<img src="./images/back-4.svg" class="img-back">
-			<img src="./images/back-5.svg" class="img-back-bottom">
-			<div class="frame7-content">
-				<div class="name">
-					FAQs
-				</div>
-				<div class="faq">
-					<div class="question">
-						Is this hackathon an online event or offline?
-					</div>
-					<div class="answer">
-						BernHack is offline event and as a participant you need to be present at Kathmandu BernHardt College before the event.
-					</div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What is BernHack?</h2>
+                <p class="section-subtitle">
+                    Nepal's most innovative hackathon bringing together the brightest minds to solve real-world problems
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            BernHack 2025 is Nepal's premier hackathon that brings together 500+ developers, designers, 
+                            and innovators for 48 hours of intense coding, creativity, and collaboration. As MLH's 
+                            official member event in Nepal, we're committed to fostering innovation and building 
+                            the next generation of tech leaders.
+                        </p>
+                        
+                        <div class="features-grid">
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i data-lucide="users"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Collaborative Environment</h3>
+                                    <p>Work with diverse teams and learn from industry experts</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i data-lucide="lightbulb"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Innovation Focus</h3>
+                                    <p>Solve real problems with cutting-edge technology</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i data-lucide="trophy"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Amazing Prizes</h3>
+                                    <p>Win cash prizes, internships, and exclusive opportunities</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i data-lucide="network"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Networking</h3>
+                                    <p>Connect with industry leaders and like-minded innovators</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <span class="window-title">innovation.js</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span class="code-text"><span class="keyword">const</span> <span class="variable">hackathon</span> = {</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span class="code-text">  <span class="property">name</span>: <span class="string">'BernHack 2025'</span>,</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span class="code-text">  <span class="property">duration</span>: <span class="number">48</span>,</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span class="code-text">  <span class="property">participants</span>: <span class="number">500</span>,</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">5</span>
+                                <span class="code-text">  <span class="property">innovation</span>: <span class="boolean">true</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">6</span>
+                                <span class="code-text">};</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				</div>
-				<div class="faq">
-					<div class="question">
-						Do this hackathon has any participation fees for students?
-					</div>
-					<div class="answer">
-						No. The hackathon is free of cost for any student from any college all over Nepal.
-					</div>
-				</div>
-				<div class="faq">
-					<div class="question">
-						What are all the restrictions on Team formations for the event?
-					</div>
-					<div class="answer">
-						A team can have at most 4 members and minimum of 2 members.
-					</div>
-				</div>
-				<div class="faq">
-					<div class="question">
-						What should I do if I do not have any team yet?
-					</div>
-					<div class="answer">
-						Just fill out the application form and according to skills you have filled out, we will match you with the best team possible during Pre-Hackathon meeting.
-					</div>
-				</div>
-				<div class="faq">
-					<div class="question">
-						What are the Perks and Benefits of Participating in this Hackathon?
-					</div>
-					<div class="answer">
-						Hackathon Provide hands on experience with the experts from different field working on the Projects like Blockchain, AI, Machine Learning, etc. This will help to give a head start if any one want to make project on the field. Along with that the participant will be provided with cool swags, stickers and refreshments to keep them up.
-					</div>
-				</div>
-				<div class="faq">
-					<div class="question">
-						What are the Accommodation Facility for the Participant from Outside the College?
-					</div>
-					<div class="answer">
-						Participant will be provided with Accommodation and Food at the College during the Hackathon Period.
-					</div>
-				</div>
-				<div class="faq">
-					<div class="question">
-						How to reach Kathmandu BernHardt COllege for the event?
-					</div>
-					<div class="answer">
-						You can navigate to the college through <a href="https://goo.gl/maps/SvoLVhLmu6rLBa9J9">here.</a>
-					</div>
-				</div>
-				<div class="faq">
-					<div class="question">
-						I have a question related to hackathon which is not listed above. What should I do?
-					</div>
-					<div class="answer">
-						Feel free to reach us out. Just drop us a mail at <a href="mailto:bernhack2020@gmail.com">bernhack2020@gmail.com</a><br>
-						You can also contact one of our organizers: Manish (+977-9843651830), Suraj (+977-9860299540), Bidur (+977-9841859494)
-					</div>
-				</div>
-			</div>
-		</div>
-	<div class="location">
-	<h1 style="text-align:center;">Location</h1>
-		<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=nepal%20bafal%20kathmandu%20bernhardt%20college&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.org">google map embed for business</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:785px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:785px;}</style></div>
-		<div class="frame frame8">
-			<div class="footer-icons">
-				<a href="https://github.com/bernhack" target="__blank"><img src="./images/github-color.svg"></a>
-				<a href="https://www.facebook.com/bernhack2020/" target="__blank"><img src="./images/fb-color.svg"></a>
-				<a href="https://twitter.com/bernhack" target="__blank"><img src="./images/twitter-color.svg"></a>
-				<a href="mailto:bernhack2020@gmail.com"><img src="./images/email-color.svg"></a>
-			</div>
-		</div>
-	</div>
+    <!-- Tracks Section -->
+    <section id="tracks" class="tracks">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Challenge Tracks</h2>
+                <p class="section-subtitle">
+                    Choose your battlefield and showcase your skills in cutting-edge technologies
+                </p>
+            </div>
+            
+            <div class="tracks-grid">
+                <div class="track-card" data-track="ai">
+                    <div class="track-icon">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <h3 class="track-title">Artificial Intelligence</h3>
+                    <p class="track-description">
+                        Build intelligent systems using machine learning, deep learning, and AI technologies
+                    </p>
+                    <div class="track-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                    <button class="track-btn">Explore Track</button>
+                </div>
+                
+                <div class="track-card" data-track="blockchain">
+                    <div class="track-icon">
+                        <i data-lucide="link"></i>
+                    </div>
+                    <h3 class="track-title">Blockchain & Web3</h3>
+                    <p class="track-description">
+                        Create decentralized applications and explore the future of digital transactions
+                    </p>
+                    <div class="track-tags">
+                        <span class="tag">Smart Contracts</span>
+                        <span class="tag">DeFi</span>
+                        <span class="tag">NFTs</span>
+                    </div>
+                    <button class="track-btn">Explore Track</button>
+                </div>
+                
+                <div class="track-card" data-track="iot">
+                    <div class="track-icon">
+                        <i data-lucide="wifi"></i>
+                    </div>
+                    <h3 class="track-title">IoT & Hardware</h3>
+                    <p class="track-description">
+                        Connect the physical and digital worlds with innovative IoT solutions
+                    </p>
+                    <div class="track-tags">
+                        <span class="tag">Sensors</span>
+                        <span class="tag">Arduino</span>
+                        <span class="tag">Raspberry Pi</span>
+                    </div>
+                    <button class="track-btn">Explore Track</button>
+                </div>
+                
+                <div class="track-card" data-track="web">
+                    <div class="track-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3 class="track-title">Web & Mobile</h3>
+                    <p class="track-description">
+                        Develop responsive web applications and mobile apps that solve real problems
+                    </p>
+                    <div class="track-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Progressive Web Apps</span>
+                    </div>
+                    <button class="track-btn">Explore Track</button>
+                </div>
+                
+                <div class="track-card" data-track="ar-vr">
+                    <div class="track-icon">
+                        <i data-lucide="glasses"></i>
+                    </div>
+                    <h3 class="track-title">AR/VR & Gaming</h3>
+                    <p class="track-description">
+                        Create immersive experiences and interactive games using AR/VR technologies
+                    </p>
+                    <div class="track-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">WebXR</span>
+                        <span class="tag">Game Development</span>
+                    </div>
+                    <button class="track-btn">Explore Track</button>
+                </div>
+                
+                <div class="track-card" data-track="open">
+                    <div class="track-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 class="track-title">Open Innovation</h3>
+                    <p class="track-description">
+                        Think outside the box and create solutions that don't fit traditional categories
+                    </p>
+                    <div class="track-tags">
+                        <span class="tag">Creative</span>
+                        <span class="tag">Innovative</span>
+                        <span class="tag">Disruptive</span>
+                    </div>
+                    <button class="track-btn">Explore Track</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <style>
-  .mapouter{position:relative;text-align:right;height:500px;width:100%;}
-  .gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}
-  .footer-text{
-  	text-align: center;
-  }
-</style>
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Event Schedule</h2>
+                <p class="section-subtitle">
+                    48 hours packed with coding, workshops, mentorship, and networking
+                </p>
+            </div>
+            
+            <div class="schedule-container">
+                <div class="schedule-tabs">
+                    <button class="schedule-tab active" data-day="day1">Day 1 - Jan 24</button>
+                    <button class="schedule-tab" data-day="day2">Day 2 - Jan 25</button>
+                </div>
+                
+                <div class="schedule-content">
+                    <div class="schedule-day active" id="day1">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-time">9:00 AM</div>
+                                <div class="timeline-content">
+                                    <h3>Registration & Breakfast</h3>
+                                    <p>Check-in, team formation, and networking breakfast</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">10:30 AM</div>
+                                <div class="timeline-content">
+                                    <h3>Opening Ceremony</h3>
+                                    <p>Welcome address, keynote speakers, and hackathon kickoff</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">12:00 PM</div>
+                                <div class="timeline-content">
+                                    <h3>Hacking Begins!</h3>
+                                    <p>Start building your innovative solutions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">1:00 PM</div>
+                                <div class="timeline-content">
+                                    <h3>Lunch Break</h3>
+                                    <p>Fuel up for the coding marathon</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">3:00 PM</div>
+                                <div class="timeline-content">
+                                    <h3>Workshop Sessions</h3>
+                                    <p>Technical workshops and mentorship sessions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">7:00 PM</div>
+                                <div class="timeline-content">
+                                    <h3>Dinner & Networking</h3>
+                                    <p>Connect with fellow hackers and mentors</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">12:00 AM</div>
+                                <div class="timeline-content">
+                                    <h3>Midnight Snacks & Games</h3>
+                                    <p>Late-night fuel and fun activities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-day" id="day2">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-time">7:00 AM</div>
+                                <div class="timeline-content">
+                                    <h3>Breakfast</h3>
+                                    <p>Morning energy boost for final sprint</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">10:00 AM</div>
+                                <div class="timeline-content">
+                                    <h3>Final Development</h3>
+                                    <p>Last chance to polish your projects</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">12:00 PM</div>
+                                <div class="timeline-content">
+                                    <h3>Submission Deadline</h3>
+                                    <p>All projects must be submitted</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">1:00 PM</div>
+                                <div class="timeline-content">
+                                    <h3>Project Expo</h3>
+                                    <p>Showcase your innovations to judges and attendees</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">3:00 PM</div>
+                                <div class="timeline-content">
+                                    <h3>Finalist Presentations</h3>
+                                    <p>Top teams present to the judging panel</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">4:30 PM</div>
+                                <div class="timeline-content">
+                                    <h3>Awards Ceremony</h3>
+                                    <p>Winner announcements and prize distribution</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">5:30 PM</div>
+                                <div class="timeline-content">
+                                    <h3>Closing Ceremony</h3>
+                                    <p>Thank you and see you next year!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Prizes Section -->
+    <section id="prizes" class="prizes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Prizes & Rewards</h2>
+                <p class="section-subtitle">
+                    Amazing prizes worth over ₹1M+ including cash, internships, and exclusive opportunities
+                </p>
+            </div>
+            
+            <div class="prizes-grid">
+                <div class="prize-card winner">
+                    <div class="prize-rank">🥇</div>
+                    <h3 class="prize-title">Grand Prize</h3>
+                    <div class="prize-amount">₹50,000</div>
+                    <ul class="prize-benefits">
+                        <li>Cash Prize</li>
+                        <li>Internship Opportunities</li>
+                        <li>Mentorship Program</li>
+                        <li>MLH Swag Pack</li>
+                    </ul>
+                </div>
+                
+                <div class="prize-card runner-up">
+                    <div class="prize-rank">🥈</div>
+                    <h3 class="prize-title">Runner Up</h3>
+                    <div class="prize-amount">₹30,000</div>
+                    <ul class="prize-benefits">
+                        <li>Cash Prize</li>
+                        <li>Workshop Access</li>
+                        <li>MLH Swag Pack</li>
+                        <li>Certificate</li>
+                    </ul>
+                </div>
+                
+                <div class="prize-card third">
+                    <div class="prize-rank">🥉</div>
+                    <h3 class="prize-title">Third Place</h3>
+                    <div class="prize-amount">₹20,000</div>
+                    <ul class="prize-benefits">
+                        <li>Cash Prize</li>
+                        <li>MLH Swag Pack</li>
+                        <li>Certificate</li>
+                        <li>Networking Access</li>
+                    </ul>
+                </div>
+                
+                <div class="prize-card special">
+                    <div class="prize-rank">⭐</div>
+                    <h3 class="prize-title">Best Innovation</h3>
+                    <div class="prize-amount">₹15,000</div>
+                    <ul class="prize-benefits">
+                        <li>Innovation Award</li>
+                        <li>Startup Incubation</li>
+                        <li>Mentor Connect</li>
+                    </ul>
+                </div>
+                
+                <div class="prize-card special">
+                    <div class="prize-rank">🚀</div>
+                    <h3 class="prize-title">Best Prototype</h3>
+                    <div class="prize-amount">₹15,000</div>
+                    <ul class="prize-benefits">
+                        <li>Prototype Award</li>
+                        <li>Development Support</li>
+                        <li>Industry Connect</li>
+                    </ul>
+                </div>
+                
+                <div class="prize-card special">
+                    <div class="prize-rank">💡</div>
+                    <h3 class="prize-title">People's Choice</h3>
+                    <div class="prize-amount">₹10,000</div>
+                    <ul class="prize-benefits">
+                        <li>Community Award</li>
+                        <li>Social Impact</li>
+                        <li>Recognition</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sponsor-prizes">
+                <h3>Sponsor Prizes</h3>
+                <div class="sponsor-prize-grid">
+                    <div class="sponsor-prize">
+                        <img src="./images/github.png" alt="GitHub" class="sponsor-logo">
+                        <div class="sponsor-prize-text">GitHub Pro Accounts & Swag</div>
+                    </div>
+                    <div class="sponsor-prize">
+                        <img src="./images/genese-cloud-academy.svg" alt="Genese Cloud Academy" class="sponsor-logo">
+                        <div class="sponsor-prize-text">AWS Credits Worth $1000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Partners</h2>
+                <p class="section-subtitle">
+                    Supported by leading organizations and companies
+                </p>
+            </div>
+            
+            <div class="sponsors-grid">
+                <div class="sponsor-tier">
+                    <h3 class="tier-title">Title Sponsor</h3>
+                    <div class="sponsor-logos title">
+                        <img src="./images/github.png" alt="GitHub" class="sponsor-logo">
+                    </div>
+                </div>
+                
+                <div class="sponsor-tier">
+                    <h3 class="tier-title">Platinum Sponsors</h3>
+                    <div class="sponsor-logos platinum">
+                        <img src="./images/msplogo.png" alt="Microsoft Student Partners" class="sponsor-logo">
+                        <img src="./images/genese-cloud-academy.svg" alt="Genese Cloud Academy" class="sponsor-logo">
+                    </div>
+                </div>
+                
+                <div class="sponsor-tier">
+                    <h3 class="tier-title">Gold Sponsors</h3>
+                    <div class="sponsor-logos gold">
+                        <img src="./images/admana.png" alt="Admana" class="sponsor-logo">
+                        <img src="./images/vianet.png" alt="Vianet" class="sponsor-logo">
+                        <img src="./images/slack.png" alt="Slack" class="sponsor-logo">
+                    </div>
+                </div>
+                
+                <div class="sponsor-tier">
+                    <h3 class="tier-title">Community Partners</h3>
+                    <div class="sponsor-logos community">
+                        <img src="./images/mlh.png" alt="MLH" class="sponsor-logo">
+                        <img src="./images/askbuddie.png" alt="AskBuddie" class="sponsor-logo">
+                        <img src="./images/csitan.png" alt="CSIT Association of Nepal" class="sponsor-logo">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="become-sponsor">
+                <h3>Interested in Sponsoring?</h3>
+                <p>Join us in supporting Nepal's tech community and get your brand in front of 500+ talented developers.</p>
+                <button class="btn btn-primary">View Sponsorship Package</button>
+            </div>
+        </div>
+    </section>
 
-			<div class="footer-text">
-				<a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="__blank"> Code of Conduct </a>
-			</div>
-			<div class="footer-text">
-				&copy; 2020 Team BernHack
-				<br>
-				Made with &nbsp;&nbsp;<span class="heart">❤️</span>
-			</div>
-			
-		</div>
-	</div>
-	<script type="text/javascript" src="./js/menu.js"></script>
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">
+                    Everything you need to know about BernHack 2025
+                </p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is a hackathon?</span>
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A hackathon is a 48-hour event where developers, designers, and innovators come together to build creative solutions to real-world problems. It's about rapid prototyping, learning, and collaboration.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Who can participate?</span>
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>BernHack is open to all students, professionals, and tech enthusiasts. Whether you're a beginner or expert, there's a place for you. Teams can have 2-4 members.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is there a participation fee?</span>
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No! BernHack is completely free for all participants. We provide meals, accommodation, swag, and all the resources you need during the event.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What should I bring?</span>
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Bring your laptop, chargers, any hardware you might need, and your enthusiasm! We'll provide everything else including food, drinks, and workspace.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need a team?</span>
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can register individually or with a team. If you don't have a team, we'll help you find teammates during the team formation session at the beginning of the event.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What about accommodation?</span>
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We provide accommodation at the college for participants who need it. The venue is open 24/7 during the hackathon, so you can work, rest, and collaborate anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Build the Future?</h2>
+                <p class="cta-description">
+                    Join 500+ innovators at Nepal's premier hackathon. Register now and be part of something amazing.
+                </p>
+                <div class="cta-actions">
+                    <button class="btn btn-primary btn-large register-btn">
+                        <span>Register Now</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <div class="cta-info">
+                        <div class="info-item">
+                            <i data-lucide="calendar"></i>
+                            <span>January 24-25, 2025</span>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Kathmandu BernHardt College</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="./images/new_logo.png" alt="BernHack" class="footer-logo">
+                    <h3>BernHack 2025</h3>
+                    <p>Nepal's Premier Hackathon</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Event</h4>
+                        <a href="#about">About</a>
+                        <a href="#tracks">Tracks</a>
+                        <a href="#schedule">Schedule</a>
+                        <a href="#prizes">Prizes</a>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <a href="#sponsors">Sponsors</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <a href="mailto:bernhack2025@gmail.com">bernhack2025@gmail.com</a>
+                        <a href="tel:+977-9843651830">+977-9843651830</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/bernhack" target="_blank" class="social-link">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/bernhack2025/" target="_blank" class="social-link">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/bernhack" target="_blank" class="social-link">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="mailto:bernhack2025@gmail.com" class="social-link">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 BernHack. All rights reserved. Made with ❤️ in Nepal.</p>
+                <div class="footer-credits">
+                    <span>Organized by</span>
+                    <img src="./images/kbclogo.png" alt="Kathmandu BernHardt College" class="college-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registration-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Register for BernHack 2025</h3>
+                <button class="modal-close" id="modal-close">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Registration will open soon! Stay tuned for updates.</p>
+                <div class="coming-soon">
+                    <i data-lucide="clock"></i>
+                    <span>Coming Soon</span>
+                </div>
+                <div class="notify-section">
+                    <h4>Get Notified</h4>
+                    <p>Be the first to know when registration opens</p>
+                    <div class="notify-form">
+                        <input type="email" placeholder="Enter your email" class="notify-input">
+                        <button class="btn btn-primary">Notify Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>
-
-		
